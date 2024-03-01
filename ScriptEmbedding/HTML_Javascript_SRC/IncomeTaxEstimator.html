@@ -1,0 +1,30 @@
+<html>
+<body>
+    <title>Income-Tax Estimator</title>
+<form>
+    <table>
+    <tr><td>Annual Income</td><td><input type="text" name="annualIncome" size="40" value="0"></td></tr>
+    <tr><td>Income Tax</td><td><input type="text" name="incomeTax" size="40" value="0" readonly = "readonly"></td></tr>
+    </table>
+    <table>
+    <tr>
+    <td>
+    <fieldset><legend>Calculate for</legend>
+        <label><input type="radio" name="citizenType" value="normal" checked="checked">Normal Citizen</label>
+        <label><input type="radio" name="citizenType" value="senior">Senior Citizen</label>
+        <label><input type="radio" name="citizenType" value="supersenior">Super Senior Citizen</label>
+    </fieldset>
+    </td>
+    </tr>
+    <tr>
+    <td>
+    <input type="button" onClick="response(this.form);" value="Calculate">
+    </td>
+    </tr>
+    </table><br/>
+    
+</form>
+</body>
+<script type="text/javascript" src="tax_calculation.js"></script>
+</html>
+
